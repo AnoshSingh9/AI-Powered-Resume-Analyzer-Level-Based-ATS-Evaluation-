@@ -47,12 +47,10 @@ Respond ONLY in valid JSON:
                 responseMimeType: "application/json"
             }
         });
-
-        // ✅ MUST be let (we modify it)
+        
         let responseText =
             result.candidates[0].content.parts[0].text;
-
-        // ✅ CLEAN markdown garbage
+        
         responseText = responseText
             .replace(/```json/gi, "")
             .replace(/```/g, "")
