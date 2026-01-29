@@ -1,0 +1,9 @@
+express
+ejs
+mongoose
+cookie-parse
+jsonwebtoken
+gemini-api
+bcrypt
+multer 
+file system

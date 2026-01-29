@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-800 text-white p-5 flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold">Analyse your resume</h1>
+        <div >
+            <form action="/check" method="post" enctype="multipart/form-data" class="flex flex-col mt-8">
+                <select name="job" class="p-3 text-white bg-zinc-600 text-center mt-4">
+                    <option value="Java Developer">Java Developer</option>
+                    <option value="Python Developer">Python Developer</option>
+                    <option value="PHP Developer">PHP Developer</option>
+                    <option value="Wordpress Developer">Wordpress Developer</option>
+                    <option value="MERN Developer">MERN Developer</option>
+                </select>
+                <input type="file" name="check" class="p-3 text-white bg-zinc-600 text-center mt-4"  accept="application/pdf">
+                <input type="submit" class="text-center bg-blue-500 p-3 rounded-md mt-4" >
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
